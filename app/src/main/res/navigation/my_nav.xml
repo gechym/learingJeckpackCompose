@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/recipelistFragment">
+
+    <fragment
+        android:id="@+id/recipelistFragment"
+        android:name="com.example.jeckpackcompose.RecipelistFragment"
+        android:label="fragment_recipelist" >
+        <action
+            android:id="@+id/action_recipelistFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.example.jeckpackcompose.RecipeFragment"
+        android:label="fragment_recipe" />
+</navigation>
